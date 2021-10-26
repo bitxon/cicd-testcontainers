@@ -19,7 +19,7 @@ public class UserRestApiV1Test extends AbstractTestcontainersV1Test {
         Assert.assertNotNull("ID should not be null", userId);
 
         User userFounded = restTemplate.getForObject("/users/{id}", User.class, userId);
-        Assertions.assertEquals("Bob", userFounded.getName());
+        Assertions.assertEquals("Bob1", userFounded.getName());
     }
 
 }
